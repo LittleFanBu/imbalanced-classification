@@ -15,9 +15,11 @@ transforms.RandomInvert(p=1)
 Then, I use “ConcatDataset” to link the new data with the original minority data and with mask data together as the training data
 And the result:
 <img width="415" alt="image" src="https://user-images.githubusercontent.com/121480302/209661010-30029385-38fb-4cf6-b2a1-1a49f8952fae.png">
+
 convergence curve of Model without data-augmentation
 
 <img width="415" alt="image" src="https://user-images.githubusercontent.com/121480302/209660899-b0f43a36-d88d-4561-8b8a-d0a4073462a1.png">
 convergence curve of Model with data-augmentation(500:480)
+
 In conclusion, after doing data-augmentation for minority class, the model can get better G_mean and its curve converges quickly.
 
